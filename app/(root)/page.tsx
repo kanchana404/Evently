@@ -19,6 +19,8 @@ export default async function Home({ searchParams }: SearchParamProps) {
     limit: 6
   })
 
+  
+
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
@@ -51,15 +53,15 @@ export default async function Home({ searchParams }: SearchParamProps) {
           <CategoryFilter />
         </div>
 
-        {/* <Collection 
+        <Collection 
           data={events?.data}
           emptyTitle="No Events Found"
           emptyStateSubtext="Come back later"
           collectionType="All_Events"
           limit={6}
-          page={page}
-          totalPages={events?.totalPages}
-        /> */}
+          page={1}
+          totalPages={2}
+        />
       </section>
     </>
   )
